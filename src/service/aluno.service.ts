@@ -8,7 +8,7 @@ import { WS_ALUNO } from './service.mapping';
 @Injectable({
     providedIn: 'root'
 })
-export class SalaService {
+export class AlunoService {
 
     constructor(private http: HttpClient) { }
 

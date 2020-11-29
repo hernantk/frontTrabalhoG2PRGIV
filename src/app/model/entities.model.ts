@@ -23,6 +23,14 @@ export class Trabalho{
     public id : Number;
     public titulo : String;
     public descricao : String;
+    public valor : String;
+    public dataPostagem : Date;
+    public dataEntrega : Date;
+
+}
+export class newTrabalho{
+    public titulo : String;
+    public descricao : String;
     public nota : String;
     public dataPostagem : Date;
     public dataEntrega : Date;

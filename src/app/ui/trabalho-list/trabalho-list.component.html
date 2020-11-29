@@ -1,1 +1,30 @@
-<p>trabalho-list works!</p>
+<div>
+    <h4>Trabalho</h4>
+
+    &nbsp;
+
+    <br /><br />
+
+    <table style="width: 90%" border="1">
+        <thead>
+            <tr>
+                <th style="width: 25%;">Titulo</th>
+                <th style="width: 15%;">Descricao</th>
+                <th style="width: 20%;">Valor</th>
+                <th style="width: 20%;">dataPostagem</th>
+                <th style="width: 20%;">dataEntrega</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let t of trabalho">
+                <td>{{t.titulo}}</td>
+                <td>{{t.descricao}}</td>
+                <td>{{t.valor}}</td>
+                <td>{{t.dataPostagem}}</td>
+                <td>{{t.dataEntrega}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <input type="button" value="Novo Trabalho" (click)="openTrabalho()"/>
+</div>

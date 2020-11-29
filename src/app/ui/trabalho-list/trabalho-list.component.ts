@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
+import { Trabalho } from 'src/app/model/entities.model';
 import { TrabalhoService } from 'src/app/service/trabalho.service';
 
 @Component({
@@ -10,11 +11,25 @@ import { TrabalhoService } from 'src/app/service/trabalho.service';
 })
 export class TrabalhoListComponent implements OnInit {
 
+
+  trabalho : Trabalho[] = []
+
   constructor(private router: Router,
               private formBuilder: FormBuilder,
-              private alunoService: TrabalhoService) { }
+              private trabalhoService: TrabalhoService) { }
 
   ngOnInit(): void {
+    this.findTrabalho()
   }
 
+  openTrabalho(){
+    
+  }
+
+
+  findTrabalho() {
+    this.trabalhoService.findAll().subscribe(result => {
+        this.trabalho = result
+    })
+}
 }

@@ -5,7 +5,8 @@ import { TrabalhoListComponent } from './ui/trabalho-list/trabalho-list.componen
 
 const routes: Routes = [
 {path:"new-aluno",component: AlunoNewComponent},
-{path:"list-trabalho",component: TrabalhoListComponent}];
+{path:"list-trabalho",component: TrabalhoListComponent},
+{path:"new-trabalho",component: TrabalhoListComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

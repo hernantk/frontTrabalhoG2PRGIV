@@ -30,9 +30,13 @@ export class AlunoNewComponent implements OnInit {
       aluno.nome = this.formAluno.value.nome
       aluno.email = this.formAluno.value.email
 
+      
 
 
 
-      this.alunoService.save(aluno)
+
+      this.alunoService.save(aluno).subscribe(result => {
+        
+    })
   }
 }

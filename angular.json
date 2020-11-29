@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "frontTrabalhoG2"
+    }
+  },
+  "defaultProject": "frontTrabalhoG2",
+  "cli": {
+    "analytics": false
+  }
 }

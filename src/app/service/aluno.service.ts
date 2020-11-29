@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Aluno } from '../model/entities.model';
+import { NewAluno,Aluno } from '../model/entities.model';
 import { WS_ALUNO } from './service.mapping';
 
 
@@ -12,11 +12,11 @@ export class AlunoService {
 
     constructor(private http: HttpClient) { }
 
-    findBAll(): Observable<Aluno[]> {
+    findAll(): Observable<Aluno[]> {
         return this.http.get<Aluno[]>(WS_ALUNO)
     }
 
-    save(sala: Aluno): Observable<any> {
-        return this.http.post(WS_ALUNO, Aluno)
+    save(aluno: NewAluno): Observable<any> {
+        return this.http.post(WS_ALUNO, aluno)
     }
 }

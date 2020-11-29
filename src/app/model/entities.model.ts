@@ -2,30 +2,30 @@
 
 export class Materia{
     public id : Number;
-    public materia : string;
+    public materia : String;
 
 
 }
 export class Aluno{
     public id : Number;
-    public nome : string;
-    public email : string;
+    public nome : String;
+    public email : String;
    
 
 }
 export class NewAluno{
-    public nome : string;
-    public email : string;
+    public nome : String;
+    public email : String;
    
 
 }
 export class Trabalho{
     public id : Number;
-    public titulo : string;
-    public descricao : string;
-    public nota : string;
+    public titulo : String;
+    public descricao : String;
+    public nota : String;
     public dataPostagem : Date;
     public dataEntrega : Date;
-    public materia : string;
+    public materia : String;
 
 }

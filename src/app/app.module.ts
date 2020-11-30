@@ -9,13 +9,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TrabalhoListComponent } from './ui/trabalho-list/trabalho-list.component';
 import { TrabalhoNewComponent } from './ui/trabalho-new/trabalho-new.component';
+import { TrabalhoAlunoComponent } from './ui/trabalho-aluno/trabalho-aluno.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AlunoNewComponent,
     TrabalhoListComponent,
-    TrabalhoNewComponent
+    TrabalhoNewComponent,
+    TrabalhoAlunoComponent
   ],
   imports: [
     BrowserModule,

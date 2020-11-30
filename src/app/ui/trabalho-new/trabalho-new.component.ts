@@ -18,8 +18,8 @@ export class TrabalhoNewComponent implements OnInit {
   formTrabalho = this.formBuilder.group({
     titulo: [''],
     descricao: [''],
-    valor: [''],
-    dateE: ['']
+    nota: [''],
+    data: ['']
     
 })
 
@@ -30,8 +30,8 @@ export class TrabalhoNewComponent implements OnInit {
     let trabalho = new newTrabalho()
     trabalho.titulo = this.formTrabalho.value.titulo
     trabalho.descricao = this.formTrabalho.value.descricao
-    trabalho.nota = this.formTrabalho.value.valor
-    trabalho.dataEntrega = this.formTrabalho.value.dataE
+    trabalho.nota = this.formTrabalho.value.nota
+    console.log(trabalho.dataEntrega =this.formTrabalho.value.data)
 
     this.trabalhoService.save(trabalho).subscribe(result => {
       this.router.navigateByUrl("/list-trabalho")

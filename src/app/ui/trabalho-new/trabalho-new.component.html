@@ -1,22 +1,33 @@
-<form [formGroup]="formTrabalho">
-
-
-
-
-    <label>Titulo</label>
-    <input formControlName="titulo" style="width: 260px;" type="text"/><br/> <br/>
-    <label>Descricao</label>
-    <input formControlName="descricao" style="width: 260px;" type="text"/><br/> <br/>
-    <label>Valor</label>
-    <input formControlName="nota" style="width: 260px;" type="number"/><br/> <br/>
-    <label>Data Entrega</label>
-    <input formControlName="data" style="width: 260px;" type="date"/><br/> <br/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="trabalho-new.component.css">
+</head>
+<body>
     
+    <form [formGroup]="formTrabalho">
 
-    <button type="button" style="height: 40px; width: 70px; font-size: 20px;
-    background-color: rgb(8, 59, 107); color: white; border-radius: 8px; float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"
-     value="Salvar" (click)="save()" >Salvar</button>
+        <label>Titulo           </label>
+        <input formControlName="titulo" style="width: 260px;" type="text"/><br/> <br/>
+        <label>Descricao     </label>
+        <input formControlName="descricao" style="width: 260px;" type="text"/><br/> <br/>
+        <label>Valor            </label>
+        <input formControlName="nota" style="width: 260px;" type="number"/><br/> <br/>
+        <label>Data Entrega </label>
+        <input formControlName="data" style="width: 260px;" type="date"/><br/> <br/>
+        
+
+        <button type="button" style="height: 40px; width: 70px; font-size: 20px;
+        background-color: rgb(8, 59, 107); color: white; border-radius: 8px; float: right;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"
+        value="Salvar" (click)="save()" >Salvar</button>
 
 
-</form>
+    </form>
+
+</body>
+</html>
+

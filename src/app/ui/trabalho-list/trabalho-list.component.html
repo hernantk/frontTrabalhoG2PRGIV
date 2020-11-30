@@ -1,31 +1,46 @@
-<div>
-    <h4>Trabalho</h4>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="trabalho-list.component.css">
+</head>
+<body>
+    <div>
+        <h3>Trabalhos:</h3>
+    
+        &nbsp;
+    
+        <br />
+    
+        <table style="width: 1000px" border="1">
+            <thead>
+                <tr>
+                    <th style="width: 25%;">Titulo</th>
+                    <th style="width: 30%;">Descricao</th>
+                    <th style="width: 15%;">Valor</th>
+                    <th style="width: 15%;">Data de Postagem</th>
+                    <th style="width: 15%;">Data de Entrega</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let t of trabalho">
+                    <td>{{t.titulo}}</td>
+                    <td>{{t.descricao}}</td>
+                    <td>{{t.nota}}</td>
+                    <td>{{t.dataPostagem}}</td>
+                    <td>{{t.dataEntrega}}</td>
+                    <td><button (click)="openTrabalho()">Editar</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+        <input type="button" style="height: 40px; width: 140px; font-size: 20px;
+        background-color: rgb(8, 59, 107); color: white; border-radius: 8px; float: right;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"
+          value="Novo Trabalho" (click)="openTrabalho()"/>
+    </div>
+</body>
+</html>
 
-    &nbsp;
-
-    <br /><br />
-
-    <table style="width: 90%" border="1">
-        <thead>
-            <tr>
-                <th style="width: 25%;">Titulo</th>
-                <th style="width: 15%;">Descricao</th>
-                <th style="width: 20%;">Valor</th>
-                <th style="width: 20%;">dataPostagem</th>
-                <th style="width: 20%;">dataEntrega</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let t of trabalho">
-                <td>{{t.titulo}}</td>
-                <td>{{t.descricao}}</td>
-                <td>{{t.nota}}</td>
-                <td>{{t.dataPostagem}}</td>
-                <td>{{t.dataEntrega}}</td>
-                <td><button (click)="openTrabalho()">Editar</button></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <input type="button" value="Novo Trabalho" (click)="openTrabalho()"/>
-</div>

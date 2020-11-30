@@ -23,7 +23,7 @@ export class Trabalho{
     public id : Number;
     public titulo : String;
     public descricao : String;
-    public valor : String;
+    public nota : Number;
     public dataPostagem : Date;
     public dataEntrega : Date;
 
@@ -31,9 +31,7 @@ export class Trabalho{
 export class newTrabalho{
     public titulo : String;
     public descricao : String;
-    public nota : String;
-    public dataPostagem : Date;
+    public nota : Number;
     public dataEntrega : Date;
-    public materia : String;
 
 }

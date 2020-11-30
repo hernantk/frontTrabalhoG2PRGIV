@@ -23,13 +23,10 @@ export class AlunoNewComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  teste(){
-
-  }
   save(){
     let aluno = new NewAluno()
-    console.log(aluno.nome = this.formAluno.value.nome)
-    console.log(aluno.email = this.formAluno.value.email)
+    aluno.nome = this.formAluno.value.nome
+    aluno.email = this.formAluno.value.email
 
     this.alunoService.save(aluno).subscribe(result => {
       this.router.navigateByUrl("/list-trabalho")

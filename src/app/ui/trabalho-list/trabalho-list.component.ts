@@ -23,6 +23,7 @@ export class TrabalhoListComponent implements OnInit {
   }
 
   openTrabalho(){
+    this.router.navigateByUrl("/new-trabalho")
     
   }
 
